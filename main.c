@@ -58,4 +58,23 @@ struct Card CARD_DATABASE[TOTAL_CARDS_IN_GAME] = {
     {.name = "Wire Trap",        .type = CARD_COMBAT, .cost = 1, .dmg = 10, .catch_up = 0, .sabotage = 20, .sustenance = 0, .target = "CLOSEST",   .awaken = false, .awaken_chnc = 0},
 
     //maneuvres
+    {.name = "Spur Ahead",       .type = CARD_MANEUVER, .cost = 1, .dmg = 0,  .catch_up = 15, .sabotage = 0,  .sustenance = 0, .target = "SELF",      .awaken = false, .awaken_chnc = 0},
+    {.name = "Drafting",         .type = CARD_MANEUVER, .cost = 1, .dmg = 0,  .catch_up = 25, .sabotage = 5,  .sustenance = 0, .target = "CLOSEST",   .awaken = false, .awaken_chnc = 0},
+    {.name = "Shortcut Rush",    .type = CARD_MANEUVER, .cost = 2, .dmg = 0,  .catch_up = 40, .sabotage = 0,  .sustenance = 0, .target = "SELF",      .awaken = false, .awaken_chnc = 0},
+    {.name = "Whip Sprint",      .type = CARD_MANEUVER, .cost = 3, .dmg = 0,  .catch_up = 60, .sabotage = 10, .sustenance = 0, .target = "SELF",      .awaken = false, .awaken_chnc = 0},
+    {.name = "Mud Throw",        .type = CARD_MANEUVER, .cost = 1, .dmg = 0,  .catch_up = 5,  .sabotage = 20, .sustenance = 0, .target = "CLOSEST",   .awaken = false, .awaken_chnc = 0},
+    {.name = "Spike Caltrops",   .type = CARD_MANEUVER, .cost = 2, .dmg = 5,  .catch_up = 10, .sabotage = 35, .sustenance = 0, .target = "ALL",       .awaken = false, .awaken_chnc = 0},
+    {.name = "Rein Cut",         .type = CARD_MANEUVER, .cost = 2, .dmg = 0,  .catch_up = 15, .sabotage = 45, .sustenance = 0, .target = "STRONGEST", .awaken = false, .awaken_chnc = 0},
+    {.name = "Dust Cloud",       .type = CARD_MANEUVER, .cost = 1, .dmg = 0,  .catch_up = 10, .sabotage = 25, .sustenance = 0, .target = "ALL",       .awaken = false, .awaken_chnc = 0},
+
+    //consumables
+    {.name = "Water Canteen",    .type = CARD_CONSUMABLE, .cost = 1, .dmg = 0, .catch_up = 0, .sabotage = 0, .sustenance = 15, .target = "SELF", .awaken = false, .awaken_chnc = 0},
+    {.name = "Dried Jerky",      .type = CARD_CONSUMABLE, .cost = 1, .dmg = 0, .catch_up = 0, .sabotage = 0, .sustenance = 20, .target = "SELF", .awaken = false, .awaken_chnc = 0},
+    {.name = "Hot Coffee",       .type = CARD_CONSUMABLE, .cost = 2, .dmg = 0, .catch_up = 0, .sabotage = 0, .sustenance = 30, .target = "SELF", .awaken = false, .awaken_chnc = 0},
+    {.name = "Fresh Bread",      .type = CARD_CONSUMABLE, .cost = 1, .dmg = 0, .catch_up = 0, .sabotage = 0, .sustenance = 25, .target = "SELF", .awaken = false, .awaken_chnc = 0},
+    {.name = "Bourbon Bottle",   .type = CARD_CONSUMABLE, .cost = 2, .dmg = 0, .catch_up = 0, .sabotage = 0, .sustenance = 40, .target = "SELF", .awaken = false, .awaken_chnc = 0},
+    {.name = "Corpse Right Eye", .type = CARD_CONSUMABLE, .cost = 3, .dmg = 0, .catch_up = 0, .sabotage = 0, .sustenance = 60, .target = "SELF", .awaken = true,  .awaken_chnc = 25},
+    {.name = "Corpse Left Arm",  .type = CARD_CONSUMABLE, .cost = 3, .dmg = 0, .catch_up = 0, .sabotage = 0, .sustenance = 60, .target = "SELF", .awaken = true,  .awaken_chnc = 25},
+    {.name = "Corpse Spine",     .type = CARD_CONSUMABLE, .cost = 4, .dmg = 0, .catch_up = 0, .sabotage = 0, .sustenance = 80, .target = "SELF", .awaken = true,  .awaken_chnc = 40},
+    {.name = "Corpse Heart",     .type = CARD_CONSUMABLE, .cost = 5, .dmg = 0, .catch_up = 0, .sabotage = 0, .sustenance = 100,.target = "SELF", .awaken = true,  .awaken_chnc = 50}
 };
