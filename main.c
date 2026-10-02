@@ -216,7 +216,7 @@ void process_turn_start(struct Player *p) {
 }
 
 int main() {
-    srand(time(NULL));
+    srand((unsigned int)time(NULL));
 
     struct Player p = {
         .name = "Gyro Zeppeli",
